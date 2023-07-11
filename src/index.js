@@ -39,6 +39,16 @@ const app = (
     {footer}
   </div>
 )
+
+// importing media files in jsx 
+
+/*  import asabenehImage from './images/asabeneh.jpg'
+
+const user = (
+  <div>
+    <img src={asabenehImage} alt='asabeneh image' />
+  </div> 
+)*/
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(app, rootElement)
