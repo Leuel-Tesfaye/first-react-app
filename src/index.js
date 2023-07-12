@@ -1,11 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import "./style.css";
+
+const welcome = 'welcome to 30 days of React' // declaring for injecting data into jsx elements
+const author = {
+  firstName: 'prince', 
+  lastName : 'Hope',
+}
 const header = (
   <header class = 'header'>
-    <h1>Welcome to 30 Days Of React</h1>
-    <h2>Getting Started React</h2>
-    <h3>JavaScript Library</h3>
+    <h1>{welcome}</h1>
+    <h2>Getting Started with React</h2>
+    <h3>{author.firstName} {author.lastName}</h3>
     <p>Leuel Tesfaye</p>
     <small>Oct 2, 2020</small>
   </header>
@@ -52,3 +58,4 @@ const user = (
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(app, rootElement)
+
