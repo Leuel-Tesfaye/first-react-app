@@ -67,19 +67,33 @@ const header =(
 )
 
 const form = (
-  <form action="">
-  <input type="text" name="firstName" id="input" placeholder="First Name"/>
-  <input type="text" name="firstName" id="input" placeholder="Last Name"/>
-  <input type="email" name="email" id="email" placeholder="Email"/>
+  <form action="" class="form">
+  <div class="container">
+    <div class="form">
+      <div class="inputGroup">
+        <input type="text" name="firstName" required="" autocomplete="off" />
+        <label for="name">First Name</label>
+      </div>
+      <div class="inputGroup">
+        <input type="text" name="lastName" required="" autocomplete="off" />
+        <label for="name">Last Name</label>
+      </div>
+      <div class="inputGroup">
+        <input type="email" name="email" required="" autocomplete="off" />
+        <label for="name">Email</label>
+      </div>
+    </div>
+  </div>
 </form>
+
 )
 const button = (
-  <button>
+  <button class= 'button'>
    Subscribe
   </button>
 )
 const app = (
-  <div>
+  <div class= 'container'>
       {header}
       {form}
       {button}
